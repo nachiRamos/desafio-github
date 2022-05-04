@@ -8,6 +8,7 @@ body{
     background-image: linear-gradient( 90.5deg,  rgba(255,207,139,0.50) 1.1%, rgba(255,207,139,1) 81.3% );
     font-family:'Roboto'; font-weight: 100;
     text-align: center;
+    
 }
 /*end RESET CSS*/
 /* inicio GRID-CONTAINER*/
@@ -29,7 +30,7 @@ body{
 
 /*inicio Header */
 .header{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times;
     font-size: 1.4rem;
     font-weight: bold;
@@ -42,22 +43,8 @@ body{
     width: 20rem;
     height: 7rem;
 }
-.header .nav-link .menu{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-.header .nav-link a{
-    text-decoration: none;
-    font-size: 1.4rem;
-    margin: auto;
-    color: #3A3845;
-    justify-content: center;
-}
-.header .nav-link:hover{
-    color: #F7CCAC;
-    transition: 0.5s;
-
+.navbar-nav a{
+    padding: 1rem;
 }
 /**end Header*/
 
@@ -72,9 +59,10 @@ body{
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     grid-area: main;
+    opacity: 0.91;
 }
 .masajesbel-main{
     font-size: 5rem;
@@ -91,7 +79,7 @@ body{
 .intro-container > p{
     font-size: 2rem;
     animation: paragraph-main;
-    -webkit-text-stroke: 0.3px rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.527);
 
 
 }
@@ -100,7 +88,6 @@ body{
 .index-section1 > div { 
     display: flex;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 0.3rem;
     grid-area: section;
     margin-top: 2px;
@@ -129,7 +116,6 @@ body{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 0.3rem;
 }
 .index-section2 > div .title-paragraph{
@@ -147,7 +133,6 @@ body{
 .index-section3 > div{
     display: flex;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     grid-area: section;
 }
 
@@ -257,63 +242,29 @@ body{
     color: white;
     -webkit-text-stroke: 2px black;
 }
-.service-container{
-    width: 400px;
-    margin: 0 auto;
-}
-.service{
-    transition: box-shadow 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin: 1rem 0;
+.card-body{
+    color:#F7CCAC;
 
 }
-.service{
-    transition: box-shadow 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin: 1rem 0;
 
-}
-.service{
-    transition: box-shadow 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin: 1rem 0;
-
-}
-.service{
-    transition: box-shadow 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin: 1rem 0;
-
-}
-.service:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
-    transition: box-shadow 0.3 ease;
-}
 
 /*end SERVICIOS*/
 
 
 /*footer*/
 .footer{
-    background-color:#3A3845;
-    color: white;
-    padding: 20px 20px 10px 20px;
-    font-size: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0efb;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
+    flex-direction: column;
     grid-area: footer;
-
 }
+
 .footer a{
     color: white;
     display:flex;
@@ -325,18 +276,40 @@ body{
     color: #C69B7B;
     transition: 0.5s;
 }
-.footer .menu{
-    list-style: none;
-    text-decoration: none;
-
-}
-.footer .icon-social a{
-    width: 200px;
-    height: 200px;
+.icon-social-container, .footer-menu-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
-.footer li a{
-    padding: 20px;
+.icon-social{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    margin: 1rem;
+}
+.icon-social:hover{
+    background-color: #121212;
+}
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
 }
 /*end footer*/
 
@@ -390,5 +363,14 @@ body{
 
 /* TABLET*/
 @media (min-width:481px)and(max-width:960px){
-/*Parece estar todo acomodado para tablet, de hecho es en donde parece verse mejor la pagina*/
-} 
+}
+.lead{
+    color: #000000;
+    opacity: 0.9;
+}
+
+.bg-secondary{
+    font-size: medium;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
