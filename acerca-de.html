@@ -10,10 +10,11 @@
     <!--CDN AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->   
-    <link rel="stylesheet" href="css/style.css">     
+    <link rel="stylesheet" href="css/backup.css">     
     <title>Masaje SPA - Acerca de nosotros</title>
 </head>
-<body> 
+<body>
+    <!--Header-->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
@@ -33,13 +34,46 @@
           </nav>
     </header>
     <div class="about-us" data-aos="zoom-out" data-aos-offset="500">
-    <h1>Acerca de nosotros</h1><br>
-    <p><strong>Somos una compañia que busca lograr la satisfaccion del cliente en cada una de sus decisiones
+    <h1 class="about-us-title">Acerca de nosotros</h1>
+    <p class="lead"><strong>Somos una compañia que busca lograr la satisfaccion del cliente en cada una de sus decisiones
         <br>ya sea prestando nuestros servicios con el mejor precio del mercado, hasta informar de ciertas cuestiones o dudas que tenga el cliente.
         <br>Tratamos de desconectarle del estrés del dia a dia, ofreciendole una atención exclusiva y personalizada.</strong>
     </p>
     </div>
-
+    <!--FAQs-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            ¿Cada cuanto es recomendable usar el servicio?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Siempre que se detecte algun dolor o molestia es recomendable hacerse los masajes <br>Aunque tambien puede ser una muy buena opcion usar el servicio para un momento ideal de relajacion total.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ¿Realmente necesito los masajes?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Si los dolores en determinadas zonas del cuerpo son algo recurrente en tu dia a dia, lo mas probable es que necesites los masajes. <br>Otra alternativa efectiva pero no igual a los masajes puede ser el foam roller, pero no todos disponen de uno.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            ¿Qué metodos de pagos aceptamos?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Actualmente trabajamos con todos los medios de pago, efectivo, transferencia bancaria o billetera virtual.</div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
     <footer class="footer">
       <ul class="footer-menu-container">
           <li class="menu-item"><a href="index.html">Volver al inicio</a></li>
@@ -53,7 +87,7 @@
       <a target="_blank" class="icon-social" href="https://twitter.com/nachidv42"><img src="img/twitter.png" class="img-fluid" alt="Twitter social media"></a>
       </div>
       <span class="copyright">&copy;2022 Ignacio Ramos Todos los derechos reservados</span>
-</footer>
+    </footer>
     <!--Scripts de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
