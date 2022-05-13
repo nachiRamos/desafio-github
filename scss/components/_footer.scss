@@ -1,0 +1,60 @@
+@import 'scss/base/_footer.scss';
+.footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0efb;
+    display: flex;
+    justify-content: $centro;
+    align-items: $centro;
+    flex-direction: column;
+    grid-area: footer;
+    a{
+        color: white;
+        display: $flex;
+        padding: 20px;
+        text-decoration: none;
+        &:hover{
+            color: #C69B7B;
+            transition: 0.5s;
+        }
+    
+}
+}
+.icon-social-container, .footer-menu-container{
+    display: $flex;
+    justify-content: $centro;
+    align-items: $centro;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    .icon-social{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        border: 1px solid #f2f2f2;
+        margin: 1rem;
+        &:hover{
+            background-color: #121212;
+        }
+    }
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 1rem;
+    .menu-item{
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: $centro;
+}
