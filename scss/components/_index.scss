@@ -1,0 +1,88 @@
+@import "./base/_index";
+.intro-container{
+    width: 100%;
+    height: 90vh;
+    background: url("../img/masajes-pareja.jpg");
+    background-position: $centro;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: $flex;
+    justify-content: $centro;
+    flex-direction: column ;
+    align-items: $centro;
+    .intro-container .masajesbel-main{
+        font-size: 8em;
+        animation: reappear 6s infinite;
+        color: #F7CCAC;
+        -webkit-text-stroke: 2px black;
+        .intro-container > p{
+            font-size: 2rem;
+            -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.527);.masajesbel-main{
+                font-size: 5rem;
+                font-family: $font-title;
+                text-align: $centro;
+                text-decoration: solid 1rem black;
+                .masajesbel-main{
+                    font-size: 5rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-align: $centro;
+                    text-decoration: solid 1rem black;
+                    }
+                }
+        }
+    }
+}
+.index-section1 > div { 
+    display: $flex;
+    align-items: $centro;
+    margin-bottom: 0.3rem;
+    grid-area: section;
+    margin-top: 2px;
+    .index-section1 img {
+        width: map-get($index-img,width);
+        margin: map-get($index-img,margin);
+        .index-section1 > div .title-paragraph{
+            margin: 1rem;
+            font-style: italic;
+        }
+    }
+}
+.index-section2 > div{
+    display: $flex;
+    flex-direction: row-reverse;
+    align-items: $centro;
+    margin-bottom: 0.3rem;
+    .index-section2 img{
+        width: map-get($index-img,width);
+        margin: map-get($index-img,margin);
+        .index-section2 > div .title-paragraph{
+            margin: 1rem;
+            font-style: italic;
+        }
+    }
+}
+.index-section3 > div{
+    display: $flex;
+    align-items: $centro;
+    grid-area: section;
+    .index-section3 img{
+        width: map-get($index-img,width);
+        margin: map-get($index-img,margin);
+        .index-section2 > div .title-paragraph{
+            margin: 1rem;
+            font-style: italic;
+        }
+    }
+}
+.ending-strong{
+    padding: 5rem;
+    background-image: linear-gradient( 109.9deg,  rgba(251,189,100,1) 1.8%, rgba(255,207,139,1) 95.4% );
+    animation: reappear 5s ease-in;
+    .ending-strong .lead{
+        font-size: 1.5rem;
+        font-style: oblique;
+    }
+}
+
+

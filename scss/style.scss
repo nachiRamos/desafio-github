@@ -1,10 +1,16 @@
-/* NESTING-COMPONENTS*/
-@import '_header.scss';
-@import '_footer.scss';
-@import '_about-us.scss';
-@import '_horarios.scss';
-@import '_servicios.scss';
+/*BASE*/
+@import "./base/variable";
+@import './base/maps';
+@import './base/reset';
+@import './base/layout';
 
-/* BASE*/
+/* NESTING-COMPONENTS*/
+@import "./components/index";
+@import './components/header';
+@import './components/footer';
+@import './components/about-us';
+@import './components/horarios';
+@import './components/servicios';
+
 
 

@@ -6,9 +6,8 @@
 }
 body{
     background-image: linear-gradient( 90.5deg,  rgba(255,207,139,0.50) 1.1%, rgba(255,207,139,1) 81.3% );
-    font-family:'Roboto'; font-weight: 100;
+    font-family:'Roboto';
     text-align: center;
-    width: 100%;
     
 }
 /*end RESET CSS*/
@@ -45,9 +44,7 @@ body{
     height: 7rem;
     margin-left: 4rem;
 }
-.navbar-nav a{
-    padding: 1rem;
-}
+
 /**end Header*/
 
 /*masajesbel-Main*/
@@ -63,7 +60,6 @@ body{
     justify-content: center;
     flex-direction: column ;
     align-items: center;
-    grid-area: main;
 }
 .masajesbel-main{
     font-size: 5rem;
