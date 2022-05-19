@@ -1,4 +1,4 @@
-@import 'scss/base/_footer.scss';
+
 .footer{
     width: 100%;
     bottom: 0;
@@ -16,7 +16,7 @@
         padding: 20px;
         text-decoration: none;
         &:hover{
-            color: #C69B7B;
+            color:map-get($colores,colorhover);
             transition: 0.5s;
         }
     

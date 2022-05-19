@@ -1,8 +1,10 @@
-@import "./base/_index";
+@import '../base/variable';
+@import '../base/extend';
+@import '../base/mixin';
 .intro-container{
     width: 100%;
     height: 90vh;
-    background: url("../img/masajes-pareja.jpg");
+    background-image: url("../img/masajes-pareja.webp");
     background-position: $centro;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,64 +13,57 @@
     justify-content: $centro;
     flex-direction: column ;
     align-items: $centro;
-    .intro-container .masajesbel-main{
-        font-size: 8em;
-        animation: reappear 6s infinite;
-        color: #F7CCAC;
-        -webkit-text-stroke: 2px black;
-        .intro-container > p{
-            font-size: 2rem;
-            -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.527);.masajesbel-main{
-                font-size: 5rem;
-                font-family: $font-title;
-                text-align: $centro;
-                text-decoration: solid 1rem black;
-                .masajesbel-main{
-                    font-size: 5rem;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    text-align: $centro;
-                    text-decoration: solid 1rem black;
-                    }
-                }
+    
+        .masajesbel-main{
+        font-size: 8rem;
+        color: map-get($colores,colortitle);
+        -webkit-text-stroke: 2px rgb(0, 0, 0);
+        -webkit-animation: tracking-in-expand 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	    animation: tracking-in-expand 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         }
-    }
 }
+        .intro-container > .lead{
+            font-size: 2rem;
+            -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.527);
+}
+
 .index-section1 > div { 
-    display: $flex;
-    align-items: $centro;
+    @include flex (flex , row , center);
     margin-bottom: 0.3rem;
     grid-area: section;
     margin-top: 2px;
+
     .index-section1 img {
-        width: map-get($index-img,width);
-        margin: map-get($index-img,margin);
-        .index-section1 > div .title-paragraph{
+        @extend %index-img;
+
+        .index-section1 > .title-paragraph{
             margin: 1rem;
             font-style: italic;
         }
     }
 }
+
 .index-section2 > div{
-    display: $flex;
-    flex-direction: row-reverse;
-    align-items: $centro;
+    @include flex (flex , row-reverse , center);
     margin-bottom: 0.3rem;
+
     .index-section2 img{
-        width: map-get($index-img,width);
-        margin: map-get($index-img,margin);
+        @extend %index-img;
+
         .index-section2 > div .title-paragraph{
             margin: 1rem;
             font-style: italic;
         }
     }
 }
+
 .index-section3 > div{
-    display: $flex;
-    align-items: $centro;
+    @include flex (flex , row , center);
     grid-area: section;
+
     .index-section3 img{
-        width: map-get($index-img,width);
-        margin: map-get($index-img,margin);
+        @extend %index-img;
+        
         .index-section2 > div .title-paragraph{
             margin: 1rem;
             font-style: italic;

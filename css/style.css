@@ -1,18 +1,310 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import './base/variable';
- *   |         ^^^^^^^^^^^^^^^^^
- *   '
- *   scss\base\_variable.scss 1:9  @import
- *   scss\style.scss 2:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './base/variable';\d\a   \2502          ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_variable.scss 1:9  @import\a   scss\\style.scss 2:9           root stylesheet";
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-image: linear-gradient(90.5deg, rgba(255, 207, 139, 0.5) 1.1%, rgb(255, 207, 139) 81.3%);
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.lead {
+  color: #000000;
+  opacity: 0.9;
+}
+
+.bg-secondary {
+  font-size: medium;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bg-success {
+  font-size: large;
+  margin-left: 1rem;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes about-us {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 500;
+  }
+}
+.index-section3 > div .index-section3 img, .index-section2 > div .index-section2 img, .index-section1 > div .index-section1 img {
+  width: 50%;
+  margin: auto;
+}
+
+/* NESTING-COMPONENTS*/
+.index-section3 > div .index-section3 img, .index-section2 > div .index-section2 img, .index-section1 > div .index-section1 img {
+  width: 50%;
+  margin: auto;
+}
+
+.intro-container {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../img/masajes-pareja.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.intro-container .masajesbel-main {
+  font-size: 8rem;
+  color: #F7CCAC;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-animation: tracking-in-expand 5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.intro-container > .lead {
+  font-size: 2rem;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.527);
+}
+
+.index-section1 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  grid-area: section;
+  margin-top: 2px;
+}
+.index-section1 > div .index-section1 img .index-section1 > .title-paragraph {
+  margin: 1rem;
+  font-style: italic;
+}
+
+.index-section2 > div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.index-section2 > div .index-section2 img .index-section2 > div .title-paragraph {
+  margin: 1rem;
+  font-style: italic;
+}
+
+.index-section3 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-area: section;
+}
+.index-section3 > div .index-section3 img .index-section2 > div .title-paragraph {
+  margin: 1rem;
+  font-style: italic;
+}
+
+.ending-strong {
+  padding: 5rem;
+  background-image: linear-gradient(109.9deg, rgb(251, 189, 100) 1.8%, rgb(255, 207, 139) 95.4%);
+  animation: reappear 5s ease-in;
+}
+.ending-strong .ending-strong .lead {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  font-family: Georgia, "Times New Roman", Times;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  justify-content: center;
+  border-bottom: solid 1px black;
+  grid-area: header;
+}
+.header .navlogo {
+  width: 20rem;
+  height: 7rem;
+  margin-left: 4rem;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: rgba(14, 14, 14, 0.9843137255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: footer;
+}
+.footer a {
+  color: white;
+  display: flex;
+  padding: 20px;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #C69B7B;
+  transition: 0.5s;
+}
+
+.icon-social-container, .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.icon-social-container .icon-social, .footer-menu-container .icon-social {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  margin: 1rem;
+}
+.icon-social-container .icon-social:hover, .footer-menu-container .icon-social:hover {
+  background-color: #121212;
+}
+
+.footer-menu-container {
+  list-style-type: none;
+  color: #f2f2f2;
+  font-size: 1rem;
+}
+.footer-menu-container .menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.footer-menu-container .menu-item:hover {
+  opacity: 1;
+}
+
+.copyright {
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center;
+}
+
+/* MOBILE */
+@media screen and (max-width: 550px) {
+  .intro-container .masajesbel-main {
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+  }
+
+  .intro-container .lead {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  .index-section1 {
+    width: 100%;
+  }
+
+  .ending-strong .lead {
+    font-size: 1.3rem;
+  }
+
+  .about-us .about-us-title {
+    font-size: 3.7rem;
+    text-shadow: #3A3845 0.2rem 0 0.2rem;
+  }
+
+  .about-us .lead {
+    font-size: 1.2rem;
+  }
+
+  .horarios .horarios-title {
+    font-size: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .horarios .we-work {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+/* TABLET*/
+@media screen and (min-width: 551px) and (max-width: 780px) {
+  .intro-container .masajesbel-main {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .intro-container .lead {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .about-us .about-us-title {
+    font-size: 4.2rem;
+    text-shadow: #3A3845 0.2rem 0 0.3rem;
+  }
+
+  .about-us .lead {
+    font-size: 1.1rem;
+  }
+
+  .horarios .horarios-title {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+
+  .horarios .we-work {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .col {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
