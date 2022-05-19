@@ -1,16 +1,18 @@
 /*BASE*/
-@import "./base/variable";
-@import './base/maps';
-@import './base/reset';
-@import './base/layout';
+@import "base/variable";
+@import 'base/maps';
+@import 'base/reset';
+@import 'base/keyframes';
+@import 'base/extend';
 
 /* NESTING-COMPONENTS*/
-@import "./components/index";
-@import './components/header';
-@import './components/footer';
-@import './components/about-us';
-@import './components/horarios';
-@import './components/servicios';
+@import "components/index";
+@import 'components/header';
+@import 'components/footer';
+@import 'components/about-us';
+@import 'components/horarios';
+@import 'components/servicios';
+@import 'components/mediaqueries';
 
 
 

@@ -1,4 +1,4 @@
-@import './base/reset';
+
 *{
     margin: 0;
     padding: 0;
@@ -8,4 +8,18 @@ body{
     background-image: $bg-color;
     font-family:'Roboto';
     text-align: center;
+}
+.lead{
+    color: #000000;
+    opacity: 0.9;
+}
+
+.bg-secondary{
+    font-size: medium;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.bg-success{
+    font-size: large;
+    margin-left: 1rem;
 }

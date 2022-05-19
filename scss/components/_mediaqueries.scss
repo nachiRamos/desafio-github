@@ -1,0 +1,68 @@
+/* MOBILE */
+@media screen and (max-width: 550px) {
+    .intro-container .masajesbel-main{
+        width: 100%;
+        font-size: 5rem;
+        font-weight: 700;
+        -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    }
+    .intro-container .lead{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+    .index-section1{
+        width: 100%;
+    }
+    .ending-strong .lead{
+        font-size: 1.3rem;
+    }
+    .about-us .about-us-title{
+        font-size: 3.7rem;
+        text-shadow: #3A3845 0.2rem 0 0.2rem;
+    }
+    .about-us .lead{
+        font-size: 1.2rem;
+    }
+    .horarios .horarios-title{
+        font-size: 3.7rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .horarios .we-work{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* TABLET*/
+@media screen and (min-width:551px) and (max-width:780px){
+    .intro-container .masajesbel-main{
+        width: 100%;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .intro-container .lead{
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+    .about-us .about-us-title{
+        font-size: 4.2rem;
+        text-shadow: #3A3845 0.2rem 0 0.3rem;
+    }
+    .about-us .lead{
+        font-size: 1.1rem;
+    }
+    .horarios .horarios-title{
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    .horarios .we-work{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1.7rem;
+    }
+    .col{
+        width: 50%;
+    }
+}
