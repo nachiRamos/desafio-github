@@ -4,7 +4,7 @@
 .intro-container{
     width: 100%;
     height: 90vh;
-    background-image: url("../img/masajes-pareja.webp");
+    background-image: url("../img/masajes-pareja.jpg");
     background-position: $centro;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,11 @@
     justify-content: $centro;
     flex-direction: column ;
     align-items: $centro;
-    
+    .lead{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.9rem;
+        font-weight: 300;
+}
         .masajesbel-main{
         font-size: 8rem;
         color: map-get($colores,colortitle);
@@ -22,59 +26,66 @@
 	    animation: tracking-in-expand 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         }
 }
-        .intro-container > .lead{
-            font-size: 2rem;
-            -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.527);
-}
+
 
 .index-section1 > div { 
     @include flex (flex , row , center);
     margin-bottom: 0.3rem;
     grid-area: section;
     margin-top: 2px;
+    .title-paragraph{
+        margin: 1rem;
+        font-style: italic;
+        .lead{
+            font-size: 1.4rem;
+            font-weight: 700;
+    }
+ }
 
     .index-section1 img {
         @extend %index-img;
-
-        .index-section1 > .title-paragraph{
-            margin: 1rem;
-            font-style: italic;
-        }
     }
 }
 
 .index-section2 > div{
     @include flex (flex , row-reverse , center);
     margin-bottom: 0.3rem;
+    .title-paragraph{
+        margin: 1rem;
+        font-style: italic;
+        .lead{
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+    }
 
     .index-section2 img{
         @extend %index-img;
-
-        .index-section2 > div .title-paragraph{
-            margin: 1rem;
-            font-style: italic;
-        }
     }
 }
 
 .index-section3 > div{
     @include flex (flex , row , center);
     grid-area: section;
+    .title-paragraph{
+        margin: 1rem;
+        font-style: italic;
+        .lead{
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+    }
 
     .index-section3 img{
         @extend %index-img;
-        
-        .index-section2 > div .title-paragraph{
-            margin: 1rem;
-            font-style: italic;
-        }
     }
 }
 .ending-strong{
-    padding: 5rem;
+    padding: 3rem;
     background-image: linear-gradient( 109.9deg,  rgba(251,189,100,1) 1.8%, rgba(255,207,139,1) 95.4% );
     animation: reappear 5s ease-in;
-    .ending-strong .lead{
+    .lead{
+        font-weight: 500;
         font-size: 1.5rem;
         font-style: oblique;
     }

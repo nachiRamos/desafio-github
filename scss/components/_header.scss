@@ -8,9 +8,18 @@
     justify-content: $centro;
     border-bottom: solid 1px black;
     grid-area: header;
+    .navbar-nav{
+        color: black;
+        .nav-link{
+            margin: 0.7rem;
+            &:hover{
+                color: map-get($colores,colortitle);
+                transition: 1s;
+            }
+        }
+    }
     .navlogo{
         width: 20rem;
         height: 7rem;
-        margin-left: 4rem;
     }
 }
