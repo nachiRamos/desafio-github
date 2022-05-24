@@ -13,3 +13,5 @@ Agregue los metadatos description-Keywords y Opengraph en todas las secciones, c
     <meta property:'og:image' content="img/aceite-esencial.ico">
     <meta property:'og:description' content="Llevamos a tu domicilio el servicio de SPA que deseas ahorrándote tiempo, cuidando tu salud y tu descanso">
 ----------------------------------------------------------------------------
+				23/05/2022
+Apliqué SEO en todas las secciones con sus respectivas descripciones, palabras claves/keywords y Opengraph
