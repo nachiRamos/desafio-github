@@ -16,10 +16,13 @@ body{
 
 .bg-secondary{
     font-size: medium;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 .bg-success{
     font-size: large;
     margin-left: 1rem;
+}
+.row{
+    margin-right: calc(-5 * var(--bs-gutter-x))
 }
