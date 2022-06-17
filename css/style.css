@@ -184,8 +184,7 @@ body {
   transition: 1s;
 }
 .header .navlogo {
-  width: 20rem;
-  height: 7rem;
+  width: 15rem;
 }
 
 .footer {
@@ -347,14 +346,14 @@ body {
   padding: 0.25rem 0;
   cursor: pointer;
 }
+.service-container .service .card-paragraph {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
 .service-container .service .card-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-}
-.service-container .service .card-paragraph {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
 }
 .service-container .service:hover {
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -418,6 +417,10 @@ body {
 
   .nav-link {
     font-size: 1rem;
+  }
+
+  .navlogo {
+    width: 8rem;
   }
 }
 /* TABLET*/

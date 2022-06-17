@@ -26,14 +26,14 @@
         margin: 1rem 0;
         border-radius: 0.5rem;
         padding: 0.25rem 0;
+        .card-paragraph{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+        }
         .card-title{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 1.6rem;
             font-weight: 400;
-        }
-        .card-paragraph{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1rem;
         }
         cursor: pointer;
         &:hover{
@@ -41,4 +41,5 @@
         }
     }
 }
+
 
